@@ -1,0 +1,23 @@
+
+<p  *ngIf="book1!=null;then bookcontent;else errorcontent"></p>
+<ng-template #bookcontent>
+   <div> Book details as follows</div>
+   <p  [ngClass]="mainContentStyle">Book isbn:{{book1.isbn}}</p>
+   <p [ngStyle]="myStyle">Book name:{{book1.title}}</p>
+   <p>Book cost:{{book1.cost}}</p>
+   <p>Book title:{{book1.year}}</p>
+</ng-template>
+<ng-template #errorcontent>
+    <div> No Book details available</div>
+</ng-template>
+<div [ngClass]="contentStyle" *ngFor="let title of bookTitle">{{title}}</div>
+<hr>
+
+<div *ngFor="let book of books">{{book.isbn}}  {{book.title}}  {{book.cost}}  {{book.year}}</div>
+
+
+
+<hr>
+
+
+

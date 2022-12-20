@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angconcept';
+  title = 'Mindtree Java MS-Rettraing';// property
+  name = 'Admin';// property
+  place = 'Chennai';
+
+  display=()=> {
+    this.place = 'display function called by button clik from the view'; 
+  }
 }
