@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { StrdemoComponent } from './strdemo/strdemo.component';
 import { ShowComponent } from './show/show.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DemoComponent } from './demo/demo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StrdemoComponent,
-    ShowComponent
+    ShowComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,
